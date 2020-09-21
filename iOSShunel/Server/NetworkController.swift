@@ -1,0 +1,82 @@
+//
+//  NetworkController.swift
+//  iOSShunel
+//
+//  Created by 許自翔 on 2020/9/12.
+//
+
+import Foundation
+import UIKit
+
+class NetworkController{
+    
+    static let shared = NetworkController()
+    
+    let urlBase = URL(string: "http://localhost:8080/Shunel_Web")!
+    
+    
+    /*GetAll*/
+    func getAllProduct( completion: @escaping ([Product]) -> Void) {
+        
+        var product = [Product]()
+        struct keyValue:Codable{
+            var action = "getAll"
+        }
+        
+        let url = urlBase.appendingPathComponent("Prouct_Servlet")
+        var req = URLRequest(url: url)
+        req.httpMethod = "POST"
+        req.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        let encoder = JSONEncoder()
+        req.httpBody = try? JSONEncoder().encode(keyValue())
+        URLSession.shared.dataTask(with: req) { (data, response, error) in
+            if let error = error{
+                print("Error: \(error.localizedDescription)")
+            }else if let response = response,let data = data{
+                print("狀態:\(response)")
+                let decoder = JSONDecoder()
+                if let finalData = try? decoder.decode([Product].self, from: data) {
+                    product = finalData
+                    completion(product)
+                }
+            }
+        }.resume()
+    }
+    /*---------------------------------------------------------------------------------------------------------------*/
+    
+    /*GetImageView*/
+    func getImageView(productID ProductID:Product, completion: @escaping (UIImage?) -> Void) {
+        
+        struct keyValue:Codable{
+            var action:String
+            var id:Int
+            var imageSize:Int
+        }
+
+        let url = urlBase.appendingPathComponent("Prouct_Servlet")
+        var req = URLRequest(url: url)
+        req.httpMethod = "POST"
+        req.setValue("application/json", forHTTPHeaderField: "Content-Type")
+//        let encoder = JSONEncoder()
+        req.httpBody = try? JSONEncoder().encode(keyValue(action: "getImage", id:ProductID.product_ID , imageSize: 300))
+        URLSession.shared.dataTask(with: req) { (data, response, error) in
+            if let error = error{
+                print("Error: \(error.localizedDescription)")
+            }else if let response = response,let data = data{
+                if let data = UIImage(data: data) {
+                    completion(data)
+                }else{
+                    completion(nil)
+                }
+                
+            }
+        }.resume()
+        
+        
+        
+        
+        
+    }
+    /*---------------------------------------------------------------------------------------------------------------*/
+    
+}

@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		FA25BD76250BD5B000DBFE40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25BD75250BD5B000DBFE40 /* AppDelegate.swift */; };
 		FA25BD78250BD5B000DBFE40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25BD77250BD5B000DBFE40 /* SceneDelegate.swift */; };
-		FA25BD7A250BD5B000DBFE40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25BD79250BD5B000DBFE40 /* ViewController.swift */; };
 		FA25BD7D250BD5B000DBFE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA25BD7B250BD5B000DBFE40 /* Main.storyboard */; };
 		FA25BD7F250BD5B100DBFE40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA25BD7E250BD5B100DBFE40 /* Assets.xcassets */; };
 		FA25BD82250BD5B100DBFE40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA25BD80250BD5B100DBFE40 /* LaunchScreen.storyboard */; };
 		FA25BD8D250BD5B100DBFE40 /* iOSShunelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25BD8C250BD5B100DBFE40 /* iOSShunelTests.swift */; };
 		FA25BD98250BD5B100DBFE40 /* iOSShunelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25BD97250BD5B100DBFE40 /* iOSShunelUITests.swift */; };
+		FA25BDAA250BD71900DBFE40 /* ProductCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25BDA9250BD71900DBFE40 /* ProductCollectionViewController.swift */; };
+		FA25BDAC250BD74100DBFE40 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25BDAB250BD74100DBFE40 /* ProductCollectionViewCell.swift */; };
+		FA25BDAF250BDB4100DBFE40 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25BDAE250BDB4100DBFE40 /* Product.swift */; };
+		FA25BDB1250BDCA800DBFE40 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25BDB0250BDCA800DBFE40 /* NetworkController.swift */; };
+		FA421AE225188A700057056F /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA421AE125188A700057056F /* ShoppingCart.swift */; };
+		FA500317251740BC008F15A8 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA500316251740BC008F15A8 /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 		FA25BD72250BD5B000DBFE40 /* iOSShunel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSShunel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA25BD75250BD5B000DBFE40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA25BD77250BD5B000DBFE40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA25BD79250BD5B000DBFE40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA25BD7C250BD5B000DBFE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA25BD7E250BD5B100DBFE40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA25BD81250BD5B100DBFE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		FA25BD93250BD5B100DBFE40 /* iOSShunelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSShunelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA25BD97250BD5B100DBFE40 /* iOSShunelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSShunelUITests.swift; sourceTree = "<group>"; };
 		FA25BD99250BD5B100DBFE40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA25BDA9250BD71900DBFE40 /* ProductCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewController.swift; sourceTree = "<group>"; };
+		FA25BDAB250BD74100DBFE40 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA25BDAE250BDB4100DBFE40 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FA25BDB0250BDCA800DBFE40 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		FA421AE125188A700057056F /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		FA500316251740BC008F15A8 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,11 @@
 		FA25BD74250BD5B000DBFE40 /* iOSShunel */ = {
 			isa = PBXGroup;
 			children = (
-				FA25BD75250BD5B000DBFE40 /* AppDelegate.swift */,
-				FA25BD77250BD5B000DBFE40 /* SceneDelegate.swift */,
-				FA25BD79250BD5B000DBFE40 /* ViewController.swift */,
-				FA25BD7B250BD5B000DBFE40 /* Main.storyboard */,
+				FA25BDAD250BDAC300DBFE40 /* Server */,
+				FA25BDA7250BD5E300DBFE40 /* Model */,
+				FA25BDA8250BD5EC00DBFE40 /* other */,
+				FA25BDA5250BD5C800DBFE40 /* Controller */,
+				FA25BDA6250BD5D300DBFE40 /* View */,
 				FA25BD7E250BD5B100DBFE40 /* Assets.xcassets */,
 				FA25BD80250BD5B100DBFE40 /* LaunchScreen.storyboard */,
 				FA25BD83250BD5B100DBFE40 /* Info.plist */,
@@ -126,6 +137,58 @@
 				FA25BD99250BD5B100DBFE40 /* Info.plist */,
 			);
 			path = iOSShunelUITests;
+			sourceTree = "<group>";
+		};
+		FA25BDA5250BD5C800DBFE40 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA5003152517406B008F15A8 /* ProductHome */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA25BDA6250BD5D300DBFE40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA25BD7B250BD5B000DBFE40 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA25BDA7250BD5E300DBFE40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA25BDAE250BDB4100DBFE40 /* Product.swift */,
+				FA421AE125188A700057056F /* ShoppingCart.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FA25BDA8250BD5EC00DBFE40 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				FA25BD75250BD5B000DBFE40 /* AppDelegate.swift */,
+				FA25BD77250BD5B000DBFE40 /* SceneDelegate.swift */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		FA25BDAD250BDAC300DBFE40 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				FA25BDB0250BDCA800DBFE40 /* NetworkController.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		FA5003152517406B008F15A8 /* ProductHome */ = {
+			isa = PBXGroup;
+			children = (
+				FA25BDA9250BD71900DBFE40 /* ProductCollectionViewController.swift */,
+				FA25BDAB250BD74100DBFE40 /* ProductCollectionViewCell.swift */,
+				FA500316251740BC008F15A8 /* ProductDetailViewController.swift */,
+			);
+			path = ProductHome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA25BD7A250BD5B000DBFE40 /* ViewController.swift in Sources */,
 				FA25BD76250BD5B000DBFE40 /* AppDelegate.swift in Sources */,
+				FA25BDAA250BD71900DBFE40 /* ProductCollectionViewController.swift in Sources */,
+				FA500317251740BC008F15A8 /* ProductDetailViewController.swift in Sources */,
+				FA25BDB1250BDCA800DBFE40 /* NetworkController.swift in Sources */,
+				FA25BDAF250BDB4100DBFE40 /* Product.swift in Sources */,
+				FA25BDAC250BD74100DBFE40 /* ProductCollectionViewCell.swift in Sources */,
 				FA25BD78250BD5B000DBFE40 /* SceneDelegate.swift in Sources */,
+				FA421AE225188A700057056F /* ShoppingCart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +504,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = N8KSD66U34;
 				INFOPLIST_FILE = iOSShunel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -445,6 +514,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = class.ep101.iOSShunel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = EP101;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,7 +525,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = N8KSD66U34;
 				INFOPLIST_FILE = iOSShunel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,6 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = class.ep101.iOSShunel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = EP101;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
