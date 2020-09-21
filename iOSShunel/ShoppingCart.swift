@@ -16,21 +16,20 @@ struct Shopping_Cart:Codable {
     let product_Price:Int
     let product_Ditail:String
     let product_Status:Int
-//    let product_MODIFY_DATE:Time
+    let account_ID:String
     
+    
+    
+    init(product_ID:Int , product_Name:String,product_Color:String, product_Price:Int
+         ,product_Ditail:String,product_Status:Int,account_ID:String) {
+        self.product_ID = product_ID
+        self.product_Name = product_Name
+        self.product_Color = product_Color
+        self.product_Ditail = product_Ditail
+        self.product_Price = product_Price
+        self.product_Status = product_Status
+        self.account_ID = account_ID
+    }
     
 }
 
-
-/*
- 
- private int product_ID;
- private String product_Name;
- private String product_Color;
- private int product_Price;
- private String product_Ditail;
- private int product_Category_ID;
- private int product_Status;
- private Timestamp product_MODIFY_DATE;
- 
- */

@@ -106,6 +106,9 @@
                                     <constraint firstAttribute="height" constant="50" id="b2S-Id-MeJ"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="cart.fill.badge.plus" catalog="system"/>
+                                <connections>
+                                    <action selector="actionAddShopCar:" destination="Pqk-zY-WcO" eventType="touchUpInside" id="Bfu-4W-OnB"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CkJ-Vg-eLb">
                                 <rect key="frame" x="0.0" y="89.5" width="414" height="342"/>
@@ -155,10 +158,10 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bDe-gJ-g2j" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Mq-EX-rCN">
+                    <tabBar key="tabBar" autoresizesSubviews="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Mq-EX-rCN">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.49383909422211897" green="0.20858306379657629" blue="0.54003400259067358" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="FdL-5h-2RY" kind="relationship" relationship="viewControllers" id="7Zz-Sq-VXt"/>
@@ -169,11 +172,11 @@
             </objects>
             <point key="canvasLocation" x="-243" y="573"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="0x5-DO-4jh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FdL-5h-2RY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="of7-eM-fbn"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="of7-eM-fbn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gx8-bY-3ZA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -217,11 +220,11 @@
             </objects>
             <point key="canvasLocation" x="1718.840579710145" y="906.69642857142856"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="k9M-1d-9hq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gHM-8f-KAm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="V7H-zD-IHp"/>
+                    <tabBarItem key="tabBarItem" title="" image="cart" catalog="system" id="V7H-zD-IHp"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mw5-pg-9uj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -238,7 +241,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
         <image name="cart.fill.badge.plus" catalog="system" width="128" height="106"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

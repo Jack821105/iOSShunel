@@ -22,7 +22,7 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var ProductDitail: UILabel!
     
     var productDetail:Product?
-    
+    var shopCar:Shopping_Cart?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,8 @@ class ProductDetailViewController: UIViewController {
         ProductColor.text = productDetail?.product_Color
         ProductPrice.text = String(productDetail?.product_Price ?? 0)
         ProductDitail.text = productDetail?.product_Ditail
+        
+        shopCar = Shopping_Cart(product_ID: productDetail!.product_ID, product_Name: productDetail!.product_Name, product_Color: productDetail!.product_Color, product_Price: productDetail!.product_Price, product_Ditail: productDetail!.product_Ditail, product_Status: productDetail!.product_Status,account_ID: "13")
         
         
         NetworkController.shared.getImageView(productID:productDetail!) { (image) in
@@ -46,6 +48,22 @@ class ProductDetailViewController: UIViewController {
         
         
     }
+    
+    @IBAction func actionAddShopCar(_ sender: Any) {
+        
+        NetworkController.shared.addShop(shoppingCartOut:shopCar!) { (count) in
+            
+            if count == 1{
+                print("成功")
+            }else{
+                print("失敗")
+            }
+            
+        }
+        
+    }
+    
+    
     
     
     /*
